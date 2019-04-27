@@ -6,7 +6,7 @@ LICENSE file in the root directory of this source tree.
 */
 // @flow
 
-import {lighten, darken} from 'polished';
+// import {lighten, darken} from 'polished';
 
 import {KIND, VARIANT} from './constants.js';
 import {styled} from '../styles/index.js';
@@ -14,20 +14,20 @@ import {styled} from '../styles/index.js';
 type RampT = '50' | '100' | '200' | '300' | '400' | '500' | '600' | '700';
 export function customOnRamp(color: string, unit?: RampT) {
   switch (unit) {
-    case '50':
-      return lighten(0.4, color);
-    case '100':
-      return lighten(0.32, color);
-    case '200':
-      return lighten(0.2, color);
-    case '300':
-      return lighten(0.12, color);
-    case '500':
-      return darken(0.24, color);
-    case '600':
-      return darken(0.3, color);
-    case '700':
-      return darken(0.4, color);
+    // case '50':
+    //   return lighten(0.4, color);
+    // case '100':
+    //   return lighten(0.32, color);
+    // case '200':
+    //   return lighten(0.2, color);
+    // case '300':
+    //   return lighten(0.12, color);
+    // case '500':
+    //   return darken(0.24, color);
+    // case '600':
+    //   return darken(0.3, color);
+    // case '700':
+    //   return darken(0.4, color);
     case '400':
     default:
       return color;
